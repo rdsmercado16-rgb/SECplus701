@@ -73,7 +73,7 @@ end
 Securing Switches using AAA: authentication, authorization, accounting.
 config t
 username admin privilege 15 secret pass
-username namemo privilege 15 secret pass
+username ralph privilege 15 secret pass
 line vty 0 14
 login local
 end
@@ -189,10 +189,10 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.22.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0704.7f6a
 ip dhcp pool CAMERA8
 host 10.22.50.8 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0709.c238
 end
 show ip dhcp binding
 
